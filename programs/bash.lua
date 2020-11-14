@@ -32,7 +32,7 @@ while not exit do
 		line = read(nil, command_history)
 	end
 	table.insert(command_history, line)
-	settings.set("bash_history", command_history)
+	settings.set("bash_history", command_history) --THIS MUST BE LIMITED OR WILL CONTINUE TO GROW
 	settings.save()
 
 
